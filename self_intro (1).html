@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나를 소개합니다</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,"Noto Sans KR",sans-serif;background:#f7f7f5;color:#222;line-height:1.7}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px,92%);margin:auto}
+.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#eef2f3,#ffffff);padding:50px 0}
+.hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.badge{display:inline-block;background:#222;color:#fff;padding:6px 12px;border-radius:999px;font-size:14px;margin-bottom:20px}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.08;margin:0 0 22px}
+.lead{font-size:21px;color:#555;max-width:680px}
+.hero-card{background:white;border-radius:28px;padding:28px;box-shadow:0 15px 40px rgba(0,0,0,.08)}
+.hero-card .photo-placeholder{height:330px;border-radius:20px;background:linear-gradient(135deg,#dfe6e9,#b2bec3);display:flex;align-items:center;justify-content:center;font-weight:700;color:#455a64;text-align:center}
+section{padding:90px 0}
+.section-title{font-size:36px;margin:0 0 14px}.section-desc{color:#666;margin:0 0 35px}
+.strengths{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border-radius:22px;padding:28px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.icon{font-size:35px}.card h3{font-size:22px;margin:12px 0 8px}.card p{color:#666;margin:0}
+.experience{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px}
+.exp-card{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.exp-image{height:250px;background:#dfe6e9;display:flex;align-items:center;justify-content:center;color:#455a64;font-weight:700;font-size:18px;text-align:center;padding:20px}
+.exp-content{padding:26px}.exp-content h3{font-size:25px;margin:0 0 10px}.exp-content p{color:#555}
+.tag{display:inline-block;background:#edf0f2;color:#455a64;border-radius:999px;padding:5px 10px;margin:3px;font-size:13px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}.box{background:#fff;border-radius:24px;padding:28px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.timeline{border-left:3px solid #d7dce0;padding-left:22px}.timeline p{margin:0 0 22px}.timeline strong{display:block}
+footer{padding:35px 0;text-align:center;color:#777;border-top:1px solid #ddd}
+.top{position:fixed;right:22px;bottom:22px;background:#222;color:#fff;padding:10px 14px;border-radius:999px;font-size:14px}
+@media(max-width:800px){.hero-inner,.about{grid-template-columns:1fr}.strengths,.experience{grid-template-columns:1fr}.hero-card .photo-placeholder{height:240px}section{padding:65px 0}}
+</style>
+</head>
+<body id="top">
+<header class="hero">
+<div class="container hero-inner">
+<div>
+<span class="badge">자기소개 페이지</span>
+<h1>안녕하세요.<br>직접 경험하며<br>배워가는 사람입니다.</h1>
+<p class="lead">새로운 일을 처음부터 잘하기보다는 직접 해보고, 반복하면서 익숙해지는 편입니다. 여러 경험을 하면서 제가 어떤 사람인지 조금씩 알아가고 있습니다.</p>
+</div>
+<div class="hero-card">
+<div class="photo-placeholder">여기에 본인 사진 또는<br>대표 사진을 넣어주세요</div>
+<p style="margin:18px 0 0;color:#666">수업 학생들에게 공유하는 자기소개 페이지입니다.</p>
+</div>
+</div>
+</header>
+
+<section>
+<div class="container">
+<h2 class="section-title">저를 보여주는 세 가지</h2>
+<p class="section-desc">제가 해온 경험에서 자연스럽게 드러난 특징을 정리했습니다.</p>
+<div class="strengths">
+<article class="card"><div class="icon">🔧</div><h3>직접 해보는 편</h3><p>처음에는 어렵게 느껴져도 직접 작업하면서 하나씩 익혀가는 편입니다.</p></article>
+<article class="card"><div class="icon">🎡</div><h3>낯선 환경에도 적응</h3><p>처음에는 어색해도 반복해서 경험하다 보면 자연스럽게 적응합니다.</p></article>
+<article class="card"><div class="icon">🐎</div><h3>경험하고 판단하는 편</h3><p>직접 경험해본 뒤 앞으로 어떤 방향으로 가는 것이 좋을지 생각합니다.</p></article>
+</div>
+</div>
+</section>
+
+<section style="background:#eceff1">
+<div class="container">
+<h2 class="section-title">나의 경험</h2>
+<p class="section-desc">지금까지 했던 일 중 기억에 남는 세 가지 경험입니다.</p>
+<div class="experience">
+<article class="exp-card" id="military">
+<div class="exp-image">K200 / K21 장갑차<br>정비 관련 사진</div>
+<div class="exp-content"><span class="tag">군 복무</span><span class="tag">정비</span><h3>장갑차 정비</h3>
+<p>군 복무 당시 K200과 K21 장갑차 정비를 담당했습니다. 반년 주기 정비와 연간 정비, 오일 교체 등 여러 작업을 하면서 장비를 직접 분해하고 점검했습니다.</p>
+<p>처음에는 비좁은 공간에서 작업하는 것도 익숙하지 않았고 공구의 종류와 사용법을 외우는 것도 어려웠습니다. 하지만 작업을 반복하면서 하나씩 익혔고, 처음에는 어렵게 느껴졌던 작업도 점점 자연스러워졌습니다.</p></div>
+</article>
+<article class="exp-card" id="lotte">
+<div class="exp-image">롯데월드 놀이기구<br>안전점검·운행 관련 사진</div>
+<div class="exp-content"><span class="tag">아르바이트</span><span class="tag">서비스</span><h3>롯데월드</h3>
+<p>군 복무를 마치고 바로 롯데월드에서 아르바이트를 했습니다. 놀이기구 이용객의 안전을 확인하고 안내하며, 음악에 맞춰 율동하면서 손님들을 보내는 일을 했습니다.</p>
+<p>처음에는 많은 사람들 앞에서 행동하는 것이 어색하고 부끄러웠지만 계속 근무하면서 자연스럽게 익숙해졌습니다. 다양한 사람들을 만나고 동료들과 함께 지내면서 20대에 했던 일 중 오래 기억에 남을 경험이 되었습니다.</p></div>
+</article>
+<article class="exp-card" id="riding">
+<div class="exp-image">승마장·말 관리<br>관련 사진</div>
+<div class="exp-content"><span class="tag">아르바이트</span><span class="tag">승마</span><h3>승마장</h3>
+<p>원래 승마에 관심이 있어 배우러 갔다가, 비용 부담을 줄이면서 승마를 배울 수 있도록 일을 시작했습니다. 초등학생 대상 승마 프로그램과 힐링승마 프로그램을 도왔습니다.</p>
+<p>사람을 응대하는 일과 말의 상태를 확인하고 관리하는 일을 동시에 해야 해서 쉽지 않았고, 말의 상태에 따라 업무 난이도도 달라졌습니다. 재활승마 관련 자격증을 준비하기도 했지만, 앞으로 더 배우고 발전할 수 있는 방향을 고민한 끝에 일을 그만두게 되었습니다.</p></div>
+</article>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 class="section-title">앞으로의 방향</h2>
+<div class="about">
+<div class="box"><h3>공개 정보</h3><p>전공 및 학교생활</p><p>해본 활동과 경험</p><p>관심 분야와 앞으로 배우고 싶은 것</p></div>
+<div class="box"><h3>이번 페이지에서 공개하지 않는 정보</h3><p>전화번호</p><p>집 주소</p><p>개인 계정 및 비밀번호 등의 계정 정보</p></div>
+</div>
+</div>
+</section>
+
+<footer>수업 과제로 만든 자기소개 페이지</footer>
+<a class="top" href="#top">맨 위로</a>
+</body>
+</html>
